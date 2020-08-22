@@ -7,3 +7,8 @@ npm start
 # Step 2.) 
 ===========
 npm install redux react-redux
+
+
+# Step 3.) 
+===========
+npm install redux-logger
