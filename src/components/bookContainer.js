@@ -1,12 +1,28 @@
 import React from 'react';
+import { buyBook } from '../redux/index';
+import { connect } from 'react-redux';
 
-const bookContainer = () => {
+const bookContainer = (props) => {
   return (
     <div>
-      <h1>Number of book </h1>
-      <button>Buy Book</button>
+      <h1>Number of book - {props.numberOfBooks}</h1>
+      <button onClick={props.buyBook}>Buy Book</button>
     </div>
   )
 }
 
-export default bookContainer;
+const mapStateToProps = (state) => {
+  return {
+    numberOfBooks: state.numberOfBooks
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    buyBook: function() {
+      dispatch(buyBook());
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(bookContainer);
