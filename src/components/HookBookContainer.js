@@ -8,7 +8,7 @@ const HookBookContainer = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="container">
       <h1>Hook Book Container</h1>
       <h2>Number of Books - {numberOfBooks}</h2>
       <button onClick={()=>dispatch(buyBook())}>Buy Book</button>

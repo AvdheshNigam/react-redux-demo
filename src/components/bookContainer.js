@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 const bookContainer = (props) => {
   return (
-    <div>
+    <div className="container">
       <h1>Number of book - {props.numberOfBooks}</h1>
       <button onClick={props.buyBook}>Buy Book</button>
     </div>
