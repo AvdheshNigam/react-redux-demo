@@ -1,6 +1,6 @@
 import React from 'react';
-import BookContainer from './components/bookContainer';
 import { Provider } from 'react-redux';
+import BookContainer from './components/bookContainer';
 import store from './redux/store/store';
 
 import './App.css';
