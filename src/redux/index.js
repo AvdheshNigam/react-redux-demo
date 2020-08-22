@@ -1,2 +1,2 @@
-export { buyBook} from './book/bookAction';
+export { buyBook } from './book/bookAction';
 
