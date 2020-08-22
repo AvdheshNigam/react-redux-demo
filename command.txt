@@ -1,0 +1,9 @@
+# Step 1.) 
+===========
+npx create-react-app react-redux-demo
+cd react-redux-demo
+npm start
+
+# Step 2.) 
+===========
+npm install redux react-redux
